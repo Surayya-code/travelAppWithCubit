@@ -48,10 +48,12 @@ class _HomepageState extends State<Homepage> with TickerProviderStateMixin {
                       width: 50,
                       height: 50,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.grey.withOpacity(0.5),
-                      ),
-                    )
+                        // borderRadius: BorderRadius.circular(10),
+                        // color: Colors.red.withOpacity(0.5),
+                         image:  DecorationImage(
+                                  image: AssetImage("assets/images/" +
+                                        images.keys.elementAt(0)),),),
+                    ),
                   ],
                 ),
               ),
